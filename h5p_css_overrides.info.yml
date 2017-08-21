@@ -1,0 +1,6 @@
+name: H5P CSS overrides
+description: Override css attributes for H5P Content Types
+package: H5P
+type: module
+version: 1.0
+core: 8.x

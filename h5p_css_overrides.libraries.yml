@@ -1,0 +1,7 @@
+global:
+  version: 1.2
+  css:
+    theme:
+      h5p-global-overrides.css: {}
+  js:
+    h5p-global-overrides.js: {}
