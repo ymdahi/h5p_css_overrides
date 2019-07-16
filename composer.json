@@ -1,0 +1,19 @@
+{
+    "name": "ymdahi/h5p_css_overrides",
+    "description": "Override css attributes for H5P Content Types (D8).",
+    "type": "drupal-custom-module",
+    "homepage": "https://github.com/ymdahi/h5p_css_overrides",
+    "authors": [
+        {
+            "name": "Yasin Dahi (ydahi)",
+            "homepage": "https://gitlab.com/ydahi",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ymdahi/h5p_css_overrides",
+        "source": "https://github.com/ymdahi/h5p_css_overrides"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
