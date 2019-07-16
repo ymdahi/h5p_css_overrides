@@ -2,6 +2,24 @@
   font-family: 'Roboto', sans-serif;
 } */
 
+
+
+.h5p-box-wrapper {
+  height: 88%; 
+}
+.h5p-cp-navigation {
+  height: 4%;
+}
+.h5p-footer {
+  height: 8%;
+}
+
+
+.h5p-course-presentation .h5p-progressbar .h5p-progressbar-part-show {
+  background: #4255bd;
+  background-image: linear-gradient(90deg,#4255bd,#7b88d1);
+}
+
 .h5p-content ul.h5p-actions {
   padding: 10px;
   height: unset;
@@ -9,14 +27,4 @@
   background: #fff;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
-}
-
-.h5p-course-presentation .h5p-footer {
-  height: 8%;
-  padding: 5px;
-}
-
-.h5p-course-presentation .h5p-progressbar .h5p-progressbar-part-show {
-  background: #4255bd;
-  background-image: linear-gradient(90deg,#4255bd,#7b88d1);
 }
