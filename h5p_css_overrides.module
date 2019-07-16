@@ -6,10 +6,10 @@ function h5p_css_overrides_h5p_library_installed($libraryData, $new){
 }
 
 
-function h5p_css_overrides_h5p_filtered_params_alter(&$filteredParams){
-  \Drupal::logger('h5p_filtered_params')->error("Alter params: " . gettype($filteredParams) . '----' . json_encode($filteredParams));
-  $filteredParams->question = 'Question has been changed by alter hook.';
-}
+// function h5p_css_overrides_h5p_filtered_params_alter(&$filteredParams){
+//   \Drupal::logger('h5p_filtered_params')->error("Alter params: " . gettype($filteredParams) . '----' . json_encode($filteredParams));
+//   $filteredParams->question = 'Question has been changed by alter hook.';
+// }
 
 function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
   // Add special styles for all H5P Content
@@ -18,28 +18,28 @@ function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
     'version' => '?ver=1',
   );
 
-  $isDragQuestion = array_key_exists('H5P.DragQuestion', $libraries) ||
-    array_key_exists('H5PEditor.DragQuestion', $libraries);
-  if ($isDragQuestion) {
-    $styles[] = (object) array(
-      'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-drag-question-overrides.css',
-      'version' => '?ver=1'
-    );
-  }
+  // $isDragQuestion = array_key_exists('H5P.DragQuestion', $libraries) ||
+  //   array_key_exists('H5PEditor.DragQuestion', $libraries);
+  // if ($isDragQuestion) {
+  //   $styles[] = (object) array(
+  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-drag-question-overrides.css',
+  //     'version' => '?ver=1'
+  //   );
+  // }
 
-  if (array_key_exists('H5P.QuestionSet', $libraries)) {
-    $styles[] = (object) array(
-      'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-question-set-overrides.css',
-      'version' => '?ver=1'
-    );
-  }
+  // if (array_key_exists('H5P.QuestionSet', $libraries)) {
+  //   $styles[] = (object) array(
+  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-question-set-overrides.css',
+  //     'version' => '?ver=1'
+  //   );
+  // }
 
-  if (array_key_exists('H5P.InteractiveVideo', $libraries)) {
-    $styles[] = (object) array(
-      'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-interactive-video-overrides.css',
-      'version' => '?ver=1'
-    );
-  }
+  // if (array_key_exists('H5P.InteractiveVideo', $libraries)) {
+  //   $styles[] = (object) array(
+  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-interactive-video-overrides.css',
+  //     'version' => '?ver=1'
+  //   );
+  // }
 
   $libraries[] = 'h5p_css_overrides/global';
 }
@@ -56,6 +56,6 @@ function h5p_css_overrides_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
 }
 
 
-function h5p_css_overrides_h5p_semantics_alter(&$semantics, $machine_name, $version) {
-  \Drupal::logger('alter-semantics-test')->error("SEMANTICS IS CALLED" . json_encode($semantics));
-}
+// function h5p_css_overrides_h5p_semantics_alter(&$semantics, $machine_name, $version) {
+//   \Drupal::logger('alter-semantics-test')->error("SEMANTICS IS CALLED" . json_encode($semantics));
+// }
