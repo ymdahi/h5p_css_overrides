@@ -1,15 +1,28 @@
 <?php
 
 
-function h5p_css_overrides_h5p_library_installed($libraryData, $new){
-  \Drupal::logger('h5p_library_installed')->error($new . ": LIBRARY INSTALLED: " . json_encode($libraryData));
-}
+// function h5p_css_overrides_h5p_library_installed($libraryData, $new){
+//   \Drupal::logger('h5p_library_installed')->error($new . ": LIBRARY INSTALLED: " . json_encode($libraryData));
+// }
 
 
 // function h5p_css_overrides_h5p_filtered_params_alter(&$filteredParams){
 //   \Drupal::logger('h5p_filtered_params')->error("Alter params: " . gettype($filteredParams) . '----' . json_encode($filteredParams));
 //   $filteredParams->question = 'Question has been changed by alter hook.';
 // }
+
+/**
+ * Add styles to H5Ps
+ *
+ * @param array $styles
+ *  Array of objects with properties path and version. Version is on the form
+ *  ?ver=1.0.2 and is used as a cache buster
+ * @param array $libraries
+ *  Array of libraries indexed by the library's machineName and with an array
+ *  as value. The value has the properties majorVersion and minorVersion
+ * @param string $mode
+ *  What mode are we in? Possible values are "editor", "div", "iframe" and "external"
+ */
 
 function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
   // Add special styles for all H5P Content
@@ -44,16 +57,16 @@ function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
   $libraries[] = 'h5p_css_overrides/global';
 }
 
-function h5p_css_overrides_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
-  // Add special styles for all H5P Content
-  $scripts[] = (object) array(
-    'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.js',
-    'version' => '?ver=1',
-  );
+// function h5p_css_overrides_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
+//   // Add special styles for all H5P Content
+//   $scripts[] = (object) array(
+//     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.js',
+//     'version' => '?ver=1',
+//   );
 
 
-  $libraries[] = 'h5p_css_overrides/global';
-}
+//   $libraries[] = 'h5p_css_overrides/global';
+// }
 
 
 // function h5p_css_overrides_h5p_semantics_alter(&$semantics, $machine_name, $version) {

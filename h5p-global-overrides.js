@@ -1,1 +1,1 @@
-console.log('JS alter hook works!');
+//console.log('JS alter hook works!');
