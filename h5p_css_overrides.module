@@ -54,7 +54,7 @@ function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
   //   );
   // }
 
-  $libraries[] = 'h5p_css_overrides/global';
+  //$libraries[] = 'h5p_css_overrides/global';
 }
 
 // function h5p_css_overrides_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
