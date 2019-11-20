@@ -1,4 +1,4 @@
-//console.log('JS alter hook works!');
+console.log('JS alter hook works!');
 
 // Set default H5P Library to Interactive Video
 // var defaultH5P = "Interactive Video";
