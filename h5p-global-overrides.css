@@ -2,6 +2,9 @@
   font-family: 'Roboto', sans-serif;
 } */
 
+body {
+  background-color: orange;
+}
 
 
 .h5p-course-presentation .h5p-box-wrapper {
