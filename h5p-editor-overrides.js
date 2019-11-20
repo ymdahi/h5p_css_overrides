@@ -1,4 +1,4 @@
-console.log('JS alter hook works EDITOR!');
+console.log('JS Works on Editor');
 
 // Set default H5P Library to Interactive Video
 // var defaultH5P = "Interactive Video";
@@ -6,4 +6,4 @@ console.log('JS alter hook works EDITOR!');
 //     return ($(this).text() == defaultH5P ); 
 // }).prop('selected', true);
 
-$('select[name="h5peditor-library"]').val( 'H5P.InteractiveVideo 1.21' );
+//$('select[name="h5peditor-library"]').val( 'H5P.InteractiveVideo 1.21' );
