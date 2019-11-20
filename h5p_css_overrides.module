@@ -26,12 +26,11 @@
 
 function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
   // Add special styles for all H5P Content
-  if ($mode == 'editor') {
-    $styles[] = (object) array(
-      'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.css',
-      'version' => '?ver=1',
-    );
-  }
+  $styles[] = (object) array(
+    'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.css',
+    'version' => '?ver=1',
+  );
+
 
   // $isDragQuestion = array_key_exists('H5P.DragQuestion', $libraries) ||
   //   array_key_exists('H5PEditor.DragQuestion', $libraries);
