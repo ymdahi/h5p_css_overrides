@@ -7,3 +7,6 @@
 // }).prop('selected', true);
 
 //$('select[name="h5peditor-library"]').val( 'H5P.InteractiveVideo 1.21' );
+
+
+console.log("running from h5p-global-overrides.js");
