@@ -65,14 +65,14 @@ function h5p_css_overrides_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
       'version' => '?ver=1',
     );
   }
-  
+
   $scripts[] = (object) array(
     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.js',
     'version' => '?ver=1',
   );
 
 
-  $libraries[] = 'h5p_css_overrides/global';
+  //$libraries[] = 'h5p_css_overrides/global';
 }
 
 
