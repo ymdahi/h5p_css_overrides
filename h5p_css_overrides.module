@@ -49,19 +49,17 @@ function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
   //   );
   // }
 
-  // if (array_key_exists('H5P.InteractiveVideo', $libraries)) {
-  //   $styles[] = (object) array(
-  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-interactive-video-overrides.css',
-  //     'version' => '?ver=1'
-  //   );
-  // }
+  if (array_key_exists('H5P.InteractiveVideo', $libraries)) {
+    $styles[] = (object) array(
+      'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-interactive-video-overrides.css',
+      'version' => '?ver=1'
+    );
+  }
 
   //$libraries[] = 'h5p_css_overrides/global';
 }
 
 function h5p_css_overrides_h5p_scripts_alter(&$scripts, $libraries, $mode) {
-
-  print ($mode);
   
   if ($mode == 'editor') {
     $styles[] = (object) array(
