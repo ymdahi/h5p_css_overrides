@@ -60,12 +60,12 @@ function h5p_css_overrides_h5p_styles_alter(&$styles, &$libraries, $mode) {
 
 function h5p_css_overrides_h5p_scripts_alter(&$scripts, $libraries, $mode) {
   
-  // if ($mode == 'editor') {
-  //   $styles[] = (object) array(
-  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-editor-overrides.js',
-  //     'version' => '?ver=1',
-  //   );
-  // }
+  if ($mode == 'div') {
+    $styles[] = (object) array(
+      'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-editor-overrides.js',
+      'version' => '?ver=1',
+    );
+  }
 
   $scripts[] = (object) array(
     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.js',

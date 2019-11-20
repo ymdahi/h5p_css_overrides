@@ -1,4 +1,4 @@
-console.log('JS Works on Editor');
+console.log('JS Works on MODE = DIV');
 
 // Set default H5P Library to Interactive Video
 // var defaultH5P = "Interactive Video";
