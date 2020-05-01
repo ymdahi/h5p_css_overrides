@@ -2,7 +2,9 @@
   font-family: 'Roboto', sans-serif;
 } */
 
-
+body {
+  max-width: unset;
+}
 
 .h5p-course-presentation .h5p-box-wrapper {
   height: 88%; 
