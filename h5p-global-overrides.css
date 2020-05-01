@@ -1,10 +1,42 @@
-/* .h5p-container {
-  font-family: 'Roboto', sans-serif;
-} */
-
-body {
-  max-width: 100%;
+/**
+** Colors
+**/
+:root {
+  --primary: #009688;
+  --primary-dark: #1c7e74;
+  --primary-darkest: #114a44;
+  --primary-light: #3FD8C9;
+  --primary-10: rgba(0, 150, 136, 0.1);
 }
+
+/**
+** Editor / Form
+**/
+html, body {
+  max-width: unset;
+}
+
+.form-manager > .tree,
+.form-manager > .common,
+.h5peditor-semi-fullscreen > .field {
+  max-width: unset;
+  margin: 0;
+  padding: 2em;
+}
+
+.h5p-metadata-button-tip {
+  display: none;
+}
+.h5p-metadata-toggler {
+  border: 0;
+  margin-left: 0;
+  font-size: 0.9em;
+  background: var(--primary);
+  color: white;
+}
+
+
+
 
 
 .h5p-course-presentation .h5p-box-wrapper {
