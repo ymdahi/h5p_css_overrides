@@ -21,8 +21,12 @@ html, body {
 .h5peditor-semi-fullscreen > .field {
   max-width: unset;
   margin: 0;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 }
+.form-manager > .common {
+  padding-bottom: 2em;
+}
+
 
 .h5p-metadata-button-tip {
   display: none;
@@ -33,8 +37,19 @@ html, body {
   font-size: 0.9em;
   background: var(--primary);
   color: white;
+  height: unset;
+  max-height: unset;
+}
+.h5p-metadata-button-wrapper:hover .h5p-metadata-toggler {
+  background: var(--primary-dark);
 }
 
+.h5p-interactivevideo-editor .h5peditor-guided-tour {
+  background: var(--primary);
+  color: white;
+  padding: 0.5em 1em;
+  right: 0;
+}
 
 
 
