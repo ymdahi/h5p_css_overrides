@@ -15,11 +15,14 @@
  * @param int $minor_version
  * Minor version fot the library
  */
-function h5p_css_overrides_h5p_semantics_alter(&$semantics) {
-  
 
-
+function h5p_css_overrides_h5p_semantics_alter(&$semantics, $machine_name, $major_version, $minor_version) {
+  // In this example implementation we add <h4> as an allowed tag in H5P.Text 1.0
+  if ($machine_name == 'H5P.Text') {
+    $semantics[0]->tags[] = 'h4';
+  }
 }
+
 
 // function h5p_css_overrides_h5p_library_installed($libraryData, $new){
 //   \Drupal::logger('h5p_library_installed')->error($new . ": LIBRARY INSTALLED: " . json_encode($libraryData));
