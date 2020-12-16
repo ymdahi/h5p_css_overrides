@@ -1,5 +1,25 @@
 <?php
 
+/**
+ * Alter a library's semantics
+ *
+ * May be used to add more fields to a library, change a widget, add more allowed tags for
+ * a textfield etc
+ *
+ * @param array $semantics
+ * A libraries definition of the data the library uses
+ * @param string $machine_name
+ * The libraries machine name
+ * @param int $major_version
+ * Major version for the library
+ * @param int $minor_version
+ * Minor version fot the library
+ */
+function h5p_css_overrides_h5p_semantics_alter(&$semantics) {
+  
+  H5PIntegration.editor.wysiwygButtons = ['inlineCode', 'codeSnippet'];
+
+}
 
 // function h5p_css_overrides_h5p_library_installed($libraryData, $new){
 //   \Drupal::logger('h5p_library_installed')->error($new . ": LIBRARY INSTALLED: " . json_encode($libraryData));
