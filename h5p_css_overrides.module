@@ -17,7 +17,11 @@
  */
 function h5p_css_overrides_h5p_semantics_alter(&$semantics) {
   
-  H5PIntegration.editor.wysiwygButtons = ['inlineCode', 'codeSnippet'];
+  if ($machine_name == 'H5P.Text') {
+    H5PIntegration.editor.wysiwygButtons = ['inlineCode', 'codeSnippet'];
+  }
+
+  
 
 }
 
