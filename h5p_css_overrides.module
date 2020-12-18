@@ -33,7 +33,7 @@ function h5p_css_overrides_h5p_semantics_alter(&$semantics) {
     if ($field->type === 'group') {
       h5p_css_overrides_h5p_semantics_alter($field->fields);
     }
-    else if ($field->type === 'text' && isset($field->widget) && $field->widget === 'html') {
+    else if ($field->type === 'text') {
       if (!isset($field->tags)) {
         $field->tags = array();
       }
