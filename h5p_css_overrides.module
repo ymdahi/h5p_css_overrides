@@ -42,7 +42,6 @@ function h5p_css_overrides_h5p_semantics_alter(&$semantics) {
          'code',
          'pre',
         ));
-      }
     }
   }
 }
