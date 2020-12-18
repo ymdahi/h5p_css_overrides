@@ -31,7 +31,7 @@ function h5p_css_overrides_h5p_semantics_alter(&$semantics) {
     }
  
     if ($field->type === 'group') {
-      h5pmathjax_h5p_semantics_alter($field->fields);
+      h5p_css_overrides_h5p_semantics_alter($field->fields);
     }
     else if ($field->type === 'text' && isset($field->widget) && $field->widget === 'html') {
       if (!isset($field->tags)) {
